@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="pointcloud_to_image" type="pointcloud_to_image" pkg="pointcloud_to_image" output="screen" respawn="false">
+		<rosparam file="$(find pointcloud_to_image)/config/topics.yaml" command="load"/>
+	</node>
+</launch>
+
