@@ -19,6 +19,7 @@ void cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud){
  		ROS_ERROR_STREAM("Error in converting cloud to image message: " << e.what());
 	}
 	image_pub_.publish (image_); //publish our cloud image
+	ROS_INFO("Published the pointcloud image");
 }
 
 
